@@ -4,17 +4,43 @@
     <meta charset="utf-8">
     <style>
       a{
-        color : #0B615E;
+        color : #086A87;
         text-decoration: none;
       }
       h1{
         font-size: 50px;
         text-align: center;
+        border : 1.5px solid gray;
+        margin-bottom: 0;
+      }
+      ol{
+        padding:20px;
+        margin: 0;
+        width: 100px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #content{
+        border-left: 1.5px solid gray;
+        padding-left: 10px;
       }
     </style>
     <title>rules</title>
   </head>
   <body>
     <h1><strong><a href="test.html">NDT</a></strong></h1>
+    <div id="grid">
+      <div>
+        <ol>
+          <li><a href="m.html" class="saw">members</a></li>
+          <li><a href="r.html" class="saw" id="active">rules</a></li>
+        </ol>
+      </div>
+      <div id = "content">
+        rules
+      </div>
+    </div>
   </body>
 </html>
